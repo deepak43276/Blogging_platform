@@ -7,9 +7,9 @@ const Layout = ({ children }) => {
   const hideHeaderFooter = ["/login", "/register"].includes(location.pathname)
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col w-full">
       {!hideHeaderFooter && <Header />}
-      <main className={`flex-1 ${!hideHeaderFooter ? "pt-16" : ""}`}>{children}</main>
+      <main className={`flex-1 w-full ${!hideHeaderFooter ? "pt-16" : ""}`}>{children}</main>
       {!hideHeaderFooter && <Footer />}
     </div>
   )

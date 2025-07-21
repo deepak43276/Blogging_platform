@@ -174,7 +174,6 @@ const AdminDashboard = () => {
     { id: "overview", label: "Overview", icon: BarChart3 },
     { id: "users", label: "Users", icon: Users },
     { id: "blogs", label: "Blogs", icon: FileText },
-    { id: "settings", label: "Settings", icon: Settings },
   ]
 
   // Error display component
@@ -672,18 +671,7 @@ const AdminDashboard = () => {
         )}
 
         {/* Settings Tab */}
-        {activeTab === "settings" && (
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-gray-900">Platform Settings</h2>
-            <Card>
-              <CardContent className="p-12 text-center">
-                <Settings className="h-16 w-16 text-gray-300 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Settings Coming Soon</h3>
-                <p className="text-gray-600">Platform configuration and settings will be available soon.</p>
-              </CardContent>
-            </Card>
-          </div>
-        )}
+        {/* Removed settings tab content */}
       </div>
 
       {/* Detailed Stats Modal */}

@@ -67,7 +67,6 @@ const Dashboard = () => {
   const tabs = [
     { id: "overview", label: "Overview", icon: BarChart3 },
     { id: "blogs", label: "My Blogs", icon: FileText },
-    { id: "analytics", label: "Analytics", icon: TrendingUp },
   ]
 
   const filteredBlogs = blogs.filter((blog) => {
@@ -415,20 +414,6 @@ const Dashboard = () => {
         )}
 
         {/* Analytics Tab */}
-        {activeTab === "analytics" && (
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-gray-900">Analytics</h2>
-            <Card>
-              <CardContent className="p-12 text-center">
-                <BarChart3 className="h-16 w-16 text-gray-300 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Analytics Coming Soon</h3>
-                <p className="text-gray-600">
-                  Detailed analytics and insights about your blog performance will be available soon.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        )}
       </div>
     </div>
   )

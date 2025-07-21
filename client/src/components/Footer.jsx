@@ -43,14 +43,13 @@ const Footer = () => {
   return (
     <footer className="w-full bg-gray-50 border-t border-gray-200">
       <div className="w-full">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-          <div className="flex flex-col items-center text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 w-full">
+          <div className="flex flex-col items-center text-center w-full">
             <Link to="/" className="flex items-center space-x-2 mb-4 justify-center">
               <span className="text-xl font-bold text-gray-900">PostCraft</span>
             </Link>
             <p className="text-gray-600 text-sm mb-6 max-w-sm mx-auto">
-              A modern blogging platform where writers share their stories, insights, and expertise with the world. Join
-              our community of passionate writers today.
+              Empower your voice and connect with a thriving community of creators. Share your knowledge, grow your audience, and make an impact with every post on PostCraft.
             </p>
             <div className="flex flex-wrap gap-4 justify-center mb-4">
               {socialLinks.map((social) => {
